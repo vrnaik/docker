@@ -75,6 +75,30 @@ docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share
 > here /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx is local system directory path and /usr/share/nginx/html is container's directory path.
 ---
 
+```sh
+
+```
+---
+
+```sh
+
+```
+---
+
+```sh
+
+```
+---
+
+```sh
+
+```
+---
+
+```sh
+
+```
+---
 
 
 
