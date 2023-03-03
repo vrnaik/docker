@@ -11,6 +11,7 @@ all core Docker features including Dockerfiles and Docker Compose.
 - [Salesforce] - Application as a Service/ Platform as a Service
 - [AngularJS] - HTML enhanced for web apps!
 - [Ace Editor] - awesome web-based text editor
+- [Dillinger] - Markdown Editor
 - [markdown-it] - Markdown parser done right. Fast and easy to extend.
 - [Twitter Bootstrap] - great UI boilerplate for modern web apps
 - [node.js] - evented I/O for the backend
@@ -61,10 +62,5 @@ docker ps -a  // shows all past executed images and their shell
    [Gulp]: <http://gulpjs.com>
    [Docker]: <https://www.docker.com>
    [Salesforce]: <https://www.salesforce.com>
+   [Dillinger]: <https://dillinger.io/>
 
-   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
-   [PlGh]: <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
-   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
-   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
-   [PlMe]: <https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md>
-   [PlGa]: <https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md>
