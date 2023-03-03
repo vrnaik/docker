@@ -37,6 +37,7 @@ docker pull alpine // this will only download the image
 docker ps // shows all running containers
 ```
 > `docker container ls` is an alternative command to `docker ps`
+> `docker ps` commands shows containerid, container name, port and the command that's immediately executed inside the container.
 
 ---
 ```sh
