@@ -31,13 +31,14 @@ docker run hello-world  // this will download hello-world image and run it.
 ```sh
 docker ps // shows all running images
 ```
+> `docker container ls` is an alternative command
 
 ```sh
 docker ps -a  // shows all past executed images and their shell
 ```
 
 ```sh
-docker run -it ubuntu // enters bash shell of ubuntu
+docker run -it ubuntu // enters bash shell of ubuntu. Enter exit to exit the bash shell.
 ```
 
 ```sh
