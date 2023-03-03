@@ -42,6 +42,11 @@ docker ps // shows all running containers
 docker ps -a  // shows all past executed containers and their shell
 ```
 ---
+```sh
+docker stop D7 //  stops the running contailner, put only two chars of containerID
+```
+> Note: we can put container name also instead of container id. All running container info is shown by using `docker ps` command
+---
 
 ```sh
 docker run -it ubuntu // enters bash shell of ubuntu. Enter exit to exit the bash shell.
@@ -52,18 +57,22 @@ docker run -it ubuntu // enters bash shell of ubuntu. Enter exit to exit the bas
 docker images // shows all downloaded images with its size.
 ```
 ---
+### 2. Volume mapping and port mapping:
 
 ```sh
-
+docker run nginx // runs nginx container with port 80 opened
 ```
 ---
 ```sh
-
+docker run -p 8080:80 nginx
 ```
+> here with `-p 8080:80` we have opened port 8080 of the system and mapped it with container's port 80. all request to port 8080 is forwarded to port 80 of the container.
+> now localhost:8080 will work
 ---
 ```sh
-
+docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share/nginx/html nginx
 ```
+> here /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx is local system directory path and /usr/share/nginx/html is container's directory path.
 ---
 
 
