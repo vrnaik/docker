@@ -22,28 +22,49 @@ to Markdown converter
 
 
 ## Docker
-
+### 1. Basic docker containers and commands:
 ```sh
-docker run hello-world  // this will download hello-world image and run it.
+docker run hello-world  // this will download hello-world image from remote registry of dockerhub and runs the container.
 ```
-> Note: if no process running in the image, it will exit running immediately.
-
+> Note: if no process running in the container, the container will get terminated immediately.
+---
 ```sh
-docker ps // shows all running images
+docker pull alpine // this will only download the image
 ```
-> `docker container ls` is an alternative command
-
+---
 ```sh
-docker ps -a  // shows all past executed images and their shell
+docker ps // shows all running containers
 ```
+> `docker container ls` is an alternative command to `docker ps`
+
+---
+```sh
+docker ps -a  // shows all past executed containers and their shell
+```
+---
 
 ```sh
 docker run -it ubuntu // enters bash shell of ubuntu. Enter exit to exit the bash shell.
 ```
+---
+
+```sh
+docker images // shows all downloaded images with its size.
+```
+---
 
 ```sh
 
 ```
+---
+```sh
+
+```
+---
+```sh
+
+```
+---
 
 
 
