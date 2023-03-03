@@ -79,12 +79,15 @@ docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share
 ### 3. Container Management:
 
 ```sh
-
+docker run -p 8080:80 -d nginx // runs the container in the background
 ```
+> the `-d` flag in above command runs the container in the background and all the logs are stored to review it later.
+> above command will return the SHA Hashcode and run the container in background.
+> we can use command `docker log 922590` to view log of container running in the background.
 ---
 
 ```sh
-
+docker log 922590 // only put first few chars of the container running in the background.
 ```
 ---
 
