@@ -18,7 +18,7 @@ all core Docker features including Dockerfiles and Docker Compose.
 - [Gulp] - the streaming build system
 - [Breakdance](https://breakdance.github.io/breakdance/) - HTML
 to Markdown converter
-- [jQuery] - duh
+- [jQuery] - duh.
 
 
 ## Docker
@@ -26,6 +26,7 @@ to Markdown converter
 ```sh
 docker run hello-world  // this will download hello-world image and run it.
 ```
+> Note: if no process running in the image, it will exit running immediately.
 
 ```sh
 docker ps // shows all running images
@@ -36,7 +37,7 @@ docker ps -a  // shows all past executed images and their shell
 ```
 
 ```sh
-
+docker run -it ubuntu // enters bash shell of ubuntu
 ```
 
 ```sh
