@@ -1,4 +1,4 @@
-## Cheatsheet for Docker by Vikas Naik
+## Docker Cheatsheet by Vikas Naik
 
 all core Docker features including Dockerfiles and Docker Compose.
 
