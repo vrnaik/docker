@@ -79,6 +79,14 @@ docker run -it ubuntu // enters bash shell of ubuntu. Enter exit to exit the bas
 docker images // shows all downloaded images with its size.
 ```
 ---
+```sh
+docker exec ubuntu1 echo "hello world" // this will execute echo command inside ubuntu1 container
+```
+---
+```sh
+docker exec -it ubuntu1 bash // with this command we can enter ubuntu1 containers bash shell in interactive mode
+```
+---
 ### 2. Volume mapping and port mapping:
 
 ```sh
