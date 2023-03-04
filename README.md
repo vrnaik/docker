@@ -263,7 +263,7 @@ docker run -v $PWD:/app -w /app -it -p 8081:3000 node node index.js
 ```javascript
 const process = require('process')
 process.on('SIGINT',() => {
-   console.log('Application is being terminated...')
+   console.log('Application is being interrupted...')
    process.exit(0)
 })
 ```
