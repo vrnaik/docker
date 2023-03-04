@@ -1,4 +1,4 @@
-![](https://github.com/vrnaik/docker/blob/main/VRN-32x32.png)
+![](https://raw.githubusercontent.com/vrnaik/docker/main/VRN-32x32.png)
 ## Docker Cheatsheet by Vikas Naik
 
 all core Docker features including Dockerfiles and Docker Compose.
