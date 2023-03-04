@@ -25,6 +25,7 @@ all core Docker features including Dockerfiles and Docker Compose.
 - [node.js] - evented I/O for the backend
 - [Express] - fast node.js network app framework [@tjholowaychuk]
 - [AngularJS] - HTML enhanced for web apps!
+- [Netlify] - Drop a folder with your site’s HTML, CSS, and JS files.
 - [Ace Editor] - awesome web-based text editor
 - [Dillinger] - Markdown Editor
 - [Derlin] - Markdown TOC generator
@@ -309,4 +310,5 @@ process.on('SIGTERM',() => {
    [Salesforce]: <https://www.salesforce.com>
    [Dillinger]: <https://dillinger.io/>
    [Derlin]: <https://derlin.github.io/bitdowntoc/>
+   [Netlify]: <https://app.netlify.com/drop/>
 
