@@ -1,3 +1,11 @@
+
+![](https://raw.githubusercontent.com/vrnaik/docker/main/VRN-32x32.png)
+## Docker Cheatsheet by Vikas Naik
+
+all core Docker features including Dockerfiles and Docker Compose.
+
+> writing down all the important commands and side notes for future reference.
+
 <!-- TOC start -->
 - [Docker Cheatsheet by Vikas Naik](#docker-cheatsheet-by-vikas-naik)
 - [Tech](#tech)
@@ -9,12 +17,6 @@
   * [4.A. Node.js in Docker:](#4a-nodejs-in-docker)
   * [4.B. Express.js in Docker:](#4b-expressjs-in-docker)
 <!-- TOC end -->
-![](https://raw.githubusercontent.com/vrnaik/docker/main/VRN-32x32.png)
-## Docker Cheatsheet by Vikas Naik
-
-all core Docker features including Dockerfiles and Docker Compose.
-
-> writing down all the important commands and side notes for future reference.
 
 ## Tech
 
