@@ -211,17 +211,26 @@ docker container rm 05 d7 // deletes two stopped containers having containerids 
 ```
 
 ---
+
+### 4. Node.js in Docker:
 ```sh
+docker pull node // downloads nodejs image
 ```
 
 ---
 ```sh
+docker run -it node  // create new container from node image in interactive mode
 ```
 
 ---
 ```sh
+docker run -v $PWD:/app -w /app node node hello.js
 ```
-
+>Note:
+   -in above command we have mapped our local system current directory with node containers `/app` directory. <br />
+   -the `-w /app` indicates that we want to set `/app` directory of container as a working directory. <br />
+   -the first `node` in the command is the name of the image. <br />
+   -after the first node, every thing ie `node hello.js` is the command to be executed inside the container.  <br />
 ---
 ```sh
 ```
