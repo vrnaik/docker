@@ -83,7 +83,7 @@ docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share
 ---
 ### List of all restricted ports on chrome:
 
-| Item      | Value |
+| Port      | process |
 | :--------- | :-----:|
 |1|      // tcpmux                                   |
 |7|      // echo                                     |
