@@ -169,9 +169,9 @@ docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share
 ```sh
 docker run -p 8080:80 -d nginx // runs the container in the background
 ```
-> -the `-d` flag in above command runs the container in the background and all the logs are stored to review it later.
-> -above command will return the SHA Hashcode and run the container in background.
-> -we can use command `docker log 922590` to view log of container running in the background.
+> -the `-d` flag in above command runs the container in the background and all the logs are stored to review it later. <br />
+> -above command will return the SHA Hashcode and run the container in background. <br />
+> -we can use command `docker log 922590` to view log of container running in the background. <br />
 ---
 
 ```sh
@@ -183,17 +183,17 @@ docker log 922590 // shows log of the container having id 922590, put only first
 docker run --name ubuntu1 ubuntu // 
 ```
 > Note: 
-> -with above command we can create multiple container from same image.
-> -all containers will have different environment with diff file structure but will share   same DOCKER HOST resources among them.
-> -all containers will have different ip address but will be in same network as of network bridge of local system (DOCKERHOST).
+> -with above command we can create multiple container from same image. <br />
+> -all containers will have different environment with diff file structure but will share   same DOCKER HOST resources among them. <br />
+> -all containers will have different ip address but will be in same network as of network bridge of local system (DOCKERHOST). <br />
 
 ---
 ```sh
 docker start ubuntu1 // start the existing container which was stopped in the past
 ```
-> -the `start` in above command is used to start the existing container which is currently not running.
-> -`ubuntu1` in above command is the container name that we want to start.
-> -with `docker start` command container will be started exactly with the same configuration as it was running with before exit.(ie port mapping, volume mapping, container name)
+> -the `start` in above command is used to start the existing container which is currently not running. <br />
+> -`ubuntu1` in above command is the container name that we want to start. <br />
+> -with `docker start` command container will be started exactly with the same configuration as it was running with before exit.(ie port mapping, volume mapping, container name) <br />
 ---
 
 ```sh
