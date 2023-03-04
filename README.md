@@ -5,6 +5,12 @@ all core Docker features including Dockerfiles and Docker Compose.
 
 > writing down all the important commands and side notes for future reference.
 
+
+[TOCM]
+
+[TOC]
+
+
 ## Tech
 
 - [Docker] - Docker is a platform designed to help developers build, share, and run modern applications!
