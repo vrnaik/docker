@@ -212,7 +212,7 @@ docker container rm 05 d7 // deletes two stopped containers having containerids 
 
 ---
 
-### 4. Node.js in Docker:
+### 4.A. Node.js in Docker:
 ```sh
 docker pull node // downloads nodejs image
 ```
@@ -226,19 +226,36 @@ docker run -it node  // create new container from node image in interactive mode
 ```sh
 docker run -v $PWD:/app -w /app node node hello.js
 ```
->Note:
+>Note: <br />
    -in above command we have mapped our local system current directory with node containers `/app` directory. <br />
    -the `-w /app` indicates that we want to set `/app` directory of container as a working directory. <br />
    -the first `node` in the command is the name of the image. <br />
    -after the first node, every thing ie `node hello.js` is the command to be executed inside the container.  <br />
 ---
+
+### 4.B. Express.js in Docker:
+
 ```sh
+docker run -v $PWD:/app -w /app -it node npm init 
 ```
+>Note: <br />
+   -above command will create package.jon file in /app directory of container but bcoz it mapped to our local directory, we can see this file in our local system directory. <br />
+   
 
 ---
 ```sh
+docker run -v $PWD:/app -w /app -it node npm install express
 ```
+>Note: <br />
+   -above command will install expressjs module.
 
+---
+
+```sh
+docker run -v $PWD:/app -w /app -it -p 8081:3000 node node index.js
+```
+>Note: <br />
+   -above command will map local system port 8081 with containers expressjs port 3000. <br />
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
