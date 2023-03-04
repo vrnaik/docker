@@ -28,9 +28,9 @@ to Markdown converter
 docker run --name hellWorld hello-world  // this will download hello-world image from remote registry of dockerhub and runs the container.
 ```
 > Note: 
-> -[X]the `run` in above command creates new container and runs the container.
-> -[X]if no process running in the container, the container will get terminated immediately.
-> -[X]the flag `--name hellWorld` is used to give a name to the container. If we don't provide a name to the container, a random name is assigned to the container.
+ -[X]the `run` in above command creates new container and runs the container.
+ -[X]if no process running in the container, the container will get terminated immediately.
+ -[X]the flag `--name hellWorld` is used to give a name to the container. If we don't provide a name to the container, a random name is assigned to the container.
 > -it is not possible to create two container with same name.
 ---
 ```sh
