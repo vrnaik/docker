@@ -27,6 +27,7 @@ all core Docker features including Dockerfiles and Docker Compose.
 - [AngularJS] - HTML enhanced for web apps!
 - [Ace Editor] - awesome web-based text editor
 - [Dillinger] - Markdown Editor
+- [Derlin] - Markdown TOC generator
 - [markdown-it] - Markdown parser done right. Fast and easy to extend.
 - [Twitter Bootstrap] - great UI boilerplate for modern web apps
 - [Gulp] - the streaming build system
@@ -307,4 +308,5 @@ process.on('SIGTERM',() => {
    [Docker]: <https://www.docker.com>
    [Salesforce]: <https://www.salesforce.com>
    [Dillinger]: <https://dillinger.io/>
+   [Derlin]: <https://derlin.github.io/bitdowntoc/>
 
