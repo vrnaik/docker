@@ -73,7 +73,9 @@ docker run nginx // runs nginx container with port 80 opened
 docker run -p 8080:80 nginx
 ```
 > -here with `-p 8080:80` we have opened port 8080 of the system and mapped it with container's port 80. 
+> 
 > -all request to port 8080 is forwarded to port 80 of the container.
+> 
 > -now localhost:8080 will work
 ---
 ```sh
