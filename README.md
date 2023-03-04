@@ -1,3 +1,14 @@
+<!-- TOC start -->
+- [Docker Cheatsheet by Vikas Naik](#docker-cheatsheet-by-vikas-naik)
+- [Tech](#tech)
+- [Docker](#docker)
+  * [1. Basic docker containers and commands:](#1-basic-docker-containers-and-commands)
+  * [2. Volume mapping and port mapping:](#2-volume-mapping-and-port-mapping)
+  * [List of all restricted ports on chrome:](#list-of-all-restricted-ports-on-chrome)
+  * [3. Container Management:](#3-container-management)
+  * [4.A. Node.js in Docker:](#4a-nodejs-in-docker)
+  * [4.B. Express.js in Docker:](#4b-expressjs-in-docker)
+<!-- TOC end -->
 ![](https://raw.githubusercontent.com/vrnaik/docker/main/VRN-32x32.png)
 ## Docker Cheatsheet by Vikas Naik
 
@@ -5,11 +16,7 @@ all core Docker features including Dockerfiles and Docker Compose.
 
 > writing down all the important commands and side notes for future reference.
 
-
 [TOCM]
-
-[TOC]
-
 
 ## Tech
 
