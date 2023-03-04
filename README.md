@@ -256,6 +256,17 @@ docker run -v $PWD:/app -w /app -it -p 8081:3000 node node index.js
 ```
 >Note: <br />
    -above command will map local system port 8081 with containers expressjs port 3000. <br />
+   -the node.js is an expressjs application.
+---
+> to handle control C (^c) to terminate the expressjs server application, write below lines of code in the expressjs application server. 
+
+```javascript
+const process = require('process')
+process.on('SIGINT',() => {
+   console.log('Application is being terminated...')
+   process.exit(0)
+})
+```
 
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
