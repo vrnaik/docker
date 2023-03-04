@@ -74,7 +74,7 @@ docker run -p 8080:80 nginx
 ```sh
 docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share/nginx/html nginx
 ```
-> here /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx is local system directory path and /usr/share/nginx/html is container's directory path.
+> here `/Users/vikasnaikmacbkpro/CodeWorkspace/Nginx` is local system directory path and `/usr/share/nginx/html` is container's directory path.
 ---
 ### 3. Container Management:
 
