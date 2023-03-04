@@ -294,12 +294,12 @@ process.on('SIGTERM',() => {
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-  
+   <!-- http://twitter.github.com/bootstrap/ -->
    
    [markdown-it]: <https://github.com/markdown-it/markdown-it>
    [Ace Editor]: <http://ace.ajax.org>
    [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]:  <https://twitter.github.io/> <!-- http://twitter.github.com/bootstrap/ -->
+   [Twitter Bootstrap]:  <https://twitter.github.io/> 
    [jQuery]: <http://jquery.com>
    [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
    [express]: <http://expressjs.com>
