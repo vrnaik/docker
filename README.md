@@ -299,7 +299,7 @@ process.on('SIGTERM',() => {
    [markdown-it]: <https://github.com/markdown-it/markdown-it>
    [Ace Editor]: <http://ace.ajax.org>
    [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
+   [Twitter Bootstrap]:  <https://twitter.github.io/> <!-- http://twitter.github.com/bootstrap/ -->
    [jQuery]: <http://jquery.com>
    [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
    [express]: <http://expressjs.com>
