@@ -7,17 +7,17 @@ all core Docker features including Dockerfiles and Docker Compose.
 > writing down all the important commands and side notes for future reference.
 
 <!-- TOC start -->
-- [Docker Cheatsheet by Vikas Naik](#docker-cheatsheet-by-vikas-naik)
 - [Tech](#tech)
 - [Docker](#docker)
-  * [1. Basic docker containers and commands:](#1-basic-docker-containers-and-commands)
-  * [2. Volume mapping and port mapping:](#2-volume-mapping-and-port-mapping)
-  * [List of all restricted ports on chrome:](#list-of-all-restricted-ports-on-chrome)
-  * [3. Container Management:](#3-container-management)
-  * [4.A. Node.js in Docker:](#4a-nodejs-in-docker)
-  * [4.B. Express.js in Docker:](#4b-expressjs-in-docker)
+  * [1. Basic docker containers and commands: Back](#1-basic-docker-containers-and-commands-back)
+  * [2. Volume mapping and port mapping: Back](#2-volume-mapping-and-port-mapping-back)
+  * [List of all restricted ports on chrome: Back](#list-of-all-restricted-ports-on-chrome-back)
+  * [3. Container Management: Back](#3-container-management-back)
+  * [4.A. Node.js in Docker: Back](#4a-nodejs-in-docker-back)
+  * [4.B. Express.js in Docker: Back](#4b-expressjs-in-docker-back)
 <!-- TOC end -->
 
+<!-- TOC --><a name="tech"></a>
 ## Tech
 
 - [Docker] - Docker is a platform designed to help developers build, share, and run modern applications!
@@ -38,8 +38,10 @@ to Markdown converter
 - [jQuery] - duh.
 
 
+<!-- TOC --><a name="docker"></a>
 ## Docker
-### 1. Basic docker containers and commands:
+<!-- TOC --><a name="1-basic-docker-containers-and-commands-back"></a>
+### 1. Basic docker containers and commands: [Back](#docker-cheatsheet-by-vikas-naik)
 ```sh
 docker run --name hellWorld hello-world  // this will download hello-world image from remote registry of dockerhub and runs the container.
 ```
@@ -87,7 +89,8 @@ docker exec ubuntu1 echo "hello world" // this will execute echo command inside 
 docker exec -it ubuntu1 bash // with this command we can enter ubuntu1 containers bash shell in interactive mode
 ```
 ---
-### 2. Volume mapping and port mapping: [Back TO Top](#1-basic-docker-containers-and-commands)
+<!-- TOC --><a name="2-volume-mapping-and-port-mapping-back"></a>
+### 2. Volume mapping and port mapping: [Back](#docker-cheatsheet-by-vikas-naik)
 
 ```sh
 docker run nginx // runs nginx container with port 80 opened
@@ -105,7 +108,8 @@ docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share
 ```
 > -here `/Users/vikasnaikmacbkpro/CodeWorkspace/Nginx` is local system directory path and `/usr/share/nginx/html` is container's directory path.
 ---
-### List of all restricted ports on chrome:
+<!-- TOC --><a name="list-of-all-restricted-ports-on-chrome-back"></a>
+### List of all restricted ports on chrome: [Back](#docker-cheatsheet-by-vikas-naik)
 
 | Port      | process |
 | :--------- | :-----:|
@@ -188,7 +192,8 @@ docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share
 |6697|   // IRC + TLS                                |
 |10080|  // Amanda							         |
 ---
-### 3. Container Management:
+<!-- TOC --><a name="3-container-management-back"></a>
+### 3. Container Management: [Back](#docker-cheatsheet-by-vikas-naik)
 
 ```sh
 docker run -p 8080:80 -d nginx // runs the container in the background
@@ -236,7 +241,8 @@ docker container rm 05 d7 // deletes two stopped containers having containerids 
 
 ---
 
-### 4.A. Node.js in Docker:
+<!-- TOC --><a name="4a-nodejs-in-docker-back"></a>
+### 4.A. Node.js in Docker: [Back](#docker-cheatsheet-by-vikas-naik)
 ```sh
 docker pull node // downloads nodejs image
 ```
@@ -257,7 +263,8 @@ docker run -v $PWD:/app -w /app node node hello.js
    -after the first node, every thing ie `node hello.js` is the command to be executed inside the container.  <br />
 ---
 
-### 4.B. Express.js in Docker:
+<!-- TOC --><a name="4b-expressjs-in-docker-back"></a>
+### 4.B. Express.js in Docker: [Back](#docker-cheatsheet-by-vikas-naik)
 
 ```sh
 docker run -v $PWD:/app -w /app -it node npm init 
