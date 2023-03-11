@@ -256,6 +256,7 @@ docker container rm 05 d7 // deletes two stopped containers having containerids 
 > - we can use different fs layers in different images.
 > - Dockerfile is used to create new custom image.
 
+---
 ```sh
 docker pull busybox // this will only download the image
 ```
