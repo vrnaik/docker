@@ -315,7 +315,7 @@ process.on('SIGTERM',() => {
 ---
 <!-- TOC --><a name="docker-client-server-architecture-back"></a>
 ### Docker Client Server Architecture: [Back](#docker-cheatsheet-by-vikas-naik)
-![](https://raw.githubusercontent.com/vrnaik/docker/Images/924c8521b0f5e7f546a6454a6f19e841f94186ee/Docker-architecture.svg)
+![](https://raw.githubusercontent.com/vrnaik/docker/9aed5022b213a082226bc3018022118e5b9db641/Images/Docker-architecture.svg)
 
 <!-- TOC --><a name="quick-reference-back"></a>
 ### Quick Reference: [Back](#docker-cheatsheet-by-vikas-naik)
