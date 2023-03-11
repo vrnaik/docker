@@ -12,8 +12,9 @@ all core Docker features including Dockerfiles and Docker Compose.
   * [2. Volume mapping and port mapping](#2-volume-mapping-and-port-mapping-back)
   * [List of all restricted ports on chrome](#list-of-all-restricted-ports-on-chrome-back)
   * [3. Container Management](#3-container-management-back)
-  * [4.A. Node.js in Docker](#4a-nodejs-in-docker-back)
-  * [4.B. Express.js in Docker](#4b-expressjs-in-docker-back)
+  * [4. Image Management](#4-image-management-back)
+  * [5.A. Node.js in Docker](#4a-nodejs-in-docker-back)
+  * [5.B. Express.js in Docker](#4b-expressjs-in-docker-back)
   * [Docker Alternative Commands](#docker-alternative-commands)
   * [Docker Client Server Architecture](#docker-client-server-architecture-back)
   * [Quick Reference](#quick-reference-back)
@@ -74,16 +75,16 @@ docker stop D7 //  stops the running contailner, put only two chars of container
 ```
 > Note: we can put container name also instead of container id. All running container info is shown by using `docker ps` command. <br />
 ---
+```sh
+docker kill D7 //  stops the running container, use this if `docker stop` is not responding.
+```
+---
 
 ```sh
 docker run -it ubuntu // enters bash shell of ubuntu. Enter exit to exit the bash shell.
 ```
 ---
 
-```sh
-docker images // shows all downloaded images with its size.
-```
----
 ```sh
 docker exec ubuntu1 echo "hello world" // this will execute echo command inside ubuntu1 container
 ```
@@ -243,9 +244,24 @@ docker container rm 05 d7 // deletes two stopped containers having containerids 
 ```
 
 ---
+<!-- TOC --><a name="4-image-management-back"></a>
+### 4. Image Management: [Back](#docker-cheatsheet-by-vikas-naik)
 
+```sh
+docker images // shows all downloaded images with its size.
+```
+---
+```sh
+docker image prune // used to remove/delete only unused(dangling ones) images.
+```
+---
+```sh
+docker image prune -a // used to remove/delete all images. it doesn't matter if it is in use by any container.
+```
+
+---
 <!-- TOC --><a name="4a-nodejs-in-docker-back"></a>
-### 4.A. Node.js in Docker: [Back](#docker-cheatsheet-by-vikas-naik)
+### 5.A. Node.js in Docker: [Back](#docker-cheatsheet-by-vikas-naik)
 ```sh
 docker pull node // downloads nodejs image
 ```
@@ -267,7 +283,7 @@ docker run -v $PWD:/app -w /app node node hello.js
 ---
 
 <!-- TOC --><a name="4b-expressjs-in-docker-back"></a>
-### 4.B. Express.js in Docker: [Back](#docker-cheatsheet-by-vikas-naik)
+### 5.B. Express.js in Docker: [Back](#docker-cheatsheet-by-vikas-naik)
 
 ```sh
 docker run -v $PWD:/app -w /app -it node npm init 
