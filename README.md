@@ -9,15 +9,15 @@ all core Docker features including Dockerfiles and Docker Compose.
 <!-- TOC start -->
 - [Tech](#tech)
 - [Docker](#docker)
-  * [1. Basic docker containers and commands: Back](#1-basic-docker-containers-and-commands-back)
-  * [2. Volume mapping and port mapping: Back](#2-volume-mapping-and-port-mapping-back)
-  * [List of all restricted ports on chrome: Back](#list-of-all-restricted-ports-on-chrome-back)
-  * [3. Container Management: Back](#3-container-management-back)
-  * [4.A. Node.js in Docker: Back](#4a-nodejs-in-docker-back)
-  * [4.B. Express.js in Docker: Back](#4b-expressjs-in-docker-back)
-  * [Docker Client Server Architecture: Back](#docker-client-server-architecture-back)
-  * [Quick Reference: Back](#quick-reference-back)
-  * [Glossary: ](#glossary-back)
+  * [1. Basic docker containers and commands](#1-basic-docker-containers-and-commands-back)
+  * [2. Volume mapping and port mapping](#2-volume-mapping-and-port-mapping-back)
+  * [List of all restricted ports on chrome](#list-of-all-restricted-ports-on-chrome-back)
+  * [3. Container Management](#3-container-management-back)
+  * [4.A. Node.js in Docker](#4a-nodejs-in-docker-back)
+  * [4.B. Express.js in Docker](#4b-expressjs-in-docker-back)
+  * [Docker Client Server Architecture](#docker-client-server-architecture-back)
+  * [Quick Reference](#quick-reference-back)
+  * [Glossary ](#glossary-back)
 <!-- TOC end -->
 
 <!-- TOC --><a name="tech"></a>
