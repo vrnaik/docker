@@ -315,7 +315,7 @@ process.on('SIGTERM',() => {
 <!-- TOC --><a name="docker-alternative-commands"></a>
 ### Docker Alternative Commands: [Back](#docker-cheatsheet-by-vikas-naik)
 | Management Command (New) | Alternative Command (Old) |
-| :--------- | :-----:|
+| :--------- | :-----|
 |docker container ls | docker ps |
 |docker builder build | docker build |
 |docker container inspect | docker inspect |
