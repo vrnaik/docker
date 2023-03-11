@@ -246,6 +246,20 @@ docker container rm 05 d7 // deletes two stopped containers having containerids 
 ---
 <!-- TOC --><a name="4-image-management-back"></a>
 ### 4. Image Management: [Back](#docker-cheatsheet-by-vikas-naik)
+>Note: Docker Image Key Points <br />
+> - it is Read Only, we cannot modify the image but we can create new image from it <br />
+> - Consists of multiple fs layers <br />
+> - images could be stored in the private or public repositories <br />
+> - could be copied, deleted or moved <br />
+> - there are official and community images <br />
+> - every image has base image. we can add multiple new file system layer on top of the base image to create new custom image.
+> - we can use different fs layers in different images.
+> - Dockerfile is used to create new custom image.
+
+```sh
+docker pull busybox // this will only download the image
+```
+---
 
 ```sh
 docker images // shows all downloaded images with its size.
@@ -262,10 +276,10 @@ docker image prune -a // used to remove/delete all images. it doesn't matter if 
 ---
 <!-- TOC --><a name="4a-nodejs-in-docker-back"></a>
 ### 5.A. Node.js in Docker: [Back](#docker-cheatsheet-by-vikas-naik)
+
 ```sh
 docker pull node // downloads nodejs image
 ```
-
 ---
 ```sh
 docker run -it node  // create new container from node image in interactive mode
@@ -337,6 +351,7 @@ process.on('SIGTERM',() => {
 |docker container inspect | docker inspect |
 |docker container commit | docker commit |
 |docker container run | docker run |
+|docker image pull | docker pull |
 
 ---
 <!-- TOC --><a name="docker-client-server-architecture-back"></a>
