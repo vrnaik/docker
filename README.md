@@ -219,7 +219,10 @@ docker run --name ubuntu1 ubuntu //
 > -with above command we can create multiple container from same image. <br />
 > -all containers will have different environment with diff file structure but will share   same DOCKER HOST resources among them. <br />
 > -all containers will have different ip address but will be in same network as of network bridge of local system (DOCKERHOST). <br />
-
+---
+```sh
+docker inspect ubuntu1 // to inspect the container, what is executed inside the container
+```
 ---
 ```sh
 docker start ubuntu1 // start the existing container which was stopped in the past
