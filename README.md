@@ -1,7 +1,7 @@
 <a name="top"></a>
 
 <a name="docker-cheatsheet-by-vikas-naik"></a>
-<h1><img src="https://raw.githubusercontent.com/vrnaik/docker/main/VRN-32x32.png"  style="height: 28px; margin-right:5px ;"> Docker Cheatsheet by Vikas Naik</h1>
+<h1><img src="https://raw.githubusercontent.com/vrnaik/docker/main/Images/VRN-32x32.png"  style="height: 28px; margin-right:5px ;"> Docker Cheatsheet by Vikas Naik</h1>
 
 all core Docker features including Dockerfiles and Docker Compose.
 
@@ -315,7 +315,7 @@ process.on('SIGTERM',() => {
 ---
 <!-- TOC --><a name="docker-client-server-architecture-back"></a>
 ### Docker Client Server Architecture: [Back](#docker-cheatsheet-by-vikas-naik)
-![](https://raw.githubusercontent.com/vrnaik/docker/924c8521b0f5e7f546a6454a6f19e841f94186ee/Docker-architecture.svg)
+![](https://raw.githubusercontent.com/vrnaik/docker/Images/924c8521b0f5e7f546a6454a6f19e841f94186ee/Docker-architecture.svg)
 
 <!-- TOC --><a name="quick-reference-back"></a>
 ### Quick Reference: [Back](#docker-cheatsheet-by-vikas-naik)
