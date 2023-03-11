@@ -1,4 +1,4 @@
-<a name="top"></a> <a name="docker-cheatsheet-by-vikas-naik"></a>
+<a name="docker-cheatsheet-by-vikas-naik"></a>
 <h1><img src="https://raw.githubusercontent.com/vrnaik/docker/main/Images/VRN-32x32.png"  style="height: 28px; margin-right:5px ;"> Docker Cheatsheet by Vikas Naik</h1>
 
 all core Docker features including Dockerfiles and Docker Compose.
@@ -322,7 +322,7 @@ process.on('SIGTERM',() => {
 
 
 <!-- TOC --><a name="glossary-back"></a>
-### Glossary: [Back](#top)
+### Glossary: [Back](#docker-cheatsheet-by-vikas-naik)
 - Docker Client : it detects/identifies the docker commands in the terminal and sends to Docker Server. 
 - Docker Server : it executes the docker commands.
 - Docker Host : In linux OS, the Complete OS is the Docker Host. In Mac/Windows the docker desktop is the Docker Host. Docker Host is the Linux environment in which all containers are executed. 
