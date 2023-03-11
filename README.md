@@ -308,6 +308,24 @@ process.on('SIGTERM',() => {
    process.exit(0)
 })
 ```
+---
+### Docker Client Server Architecture: [Back](#docker-cheatsheet-by-vikas-naik)
+![](https://raw.githubusercontent.com/vrnaik/docker/924c8521b0f5e7f546a6454a6f19e841f94186ee/Docker-architecture.svg)
+
+### Quick Reference: [Back](#docker-cheatsheet-by-vikas-naik)
+- https://docs.docker.com/get-started/overview/ (Official Documentation)
+- https://hub.docker.com/ (Docker Registry)
+
+
+### Glossary: [Back](#docker-cheatsheet-by-vikas-naik)
+- Docker Client : it detects/identifies the docker commands in the terminal. 
+- Docker Service : it executes the docker commands.
+- Docker Host : In linux OS, the Complete OS is the Docker Host. In Mac/Windows the docker desktop is the Docker Host. Docker Host is the Linux environment in which all containers are executed. 
+- Docker Image : it is read only image from which the containers are created.
+- Docker Container : containers are created from images. We can interact with Containers and edit files in the containers.
+- Docker Repository : Docker Repositories are used to store different versions of the image. 
+- Docker Registry : it is Docker Repository hosting service. Docker Hub website is the Docker Registry.
+
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
