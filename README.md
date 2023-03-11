@@ -15,6 +15,9 @@ all core Docker features including Dockerfiles and Docker Compose.
   * [3. Container Management: Back](#3-container-management-back)
   * [4.A. Node.js in Docker: Back](#4a-nodejs-in-docker-back)
   * [4.B. Express.js in Docker: Back](#4b-expressjs-in-docker-back)
+  * [Docker Client Server Architecture: Back](#docker-client-server-architecture-back)
+  * [Quick Reference: Back](#quick-reference-back)
+  * [Glossary: Back](#glossary-back)
 <!-- TOC end -->
 
 <!-- TOC --><a name="tech"></a>
@@ -309,14 +312,17 @@ process.on('SIGTERM',() => {
 })
 ```
 ---
+<!-- TOC --><a name="docker-client-server-architecture-back"></a>
 ### Docker Client Server Architecture: [Back](#docker-cheatsheet-by-vikas-naik)
 ![](https://raw.githubusercontent.com/vrnaik/docker/924c8521b0f5e7f546a6454a6f19e841f94186ee/Docker-architecture.svg)
 
+<!-- TOC --><a name="quick-reference-back"></a>
 ### Quick Reference: [Back](#docker-cheatsheet-by-vikas-naik)
 - https://docs.docker.com/get-started/overview/ (Official Documentation)
 - https://hub.docker.com/ (Docker Registry)
 
 
+<!-- TOC --><a name="glossary-back"></a>
 ### Glossary: [Back](#docker-cheatsheet-by-vikas-naik)
 - Docker Client : it detects/identifies the docker commands in the terminal. 
 - Docker Server : it executes the docker commands.
