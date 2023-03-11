@@ -1,6 +1,8 @@
 <a name="top"></a>
 ![](https://raw.githubusercontent.com/vrnaik/docker/main/VRN-32x32.png)
-## Docker Cheatsheet by Vikas Naik
+
+<a name="Docker-Cheatsheet-by-Vikas"></a>
+<h2><img src="https://raw.githubusercontent.com/vrnaik/docker/main/VRN-32x32.png"> Docker Cheatsheet by Vikas Naik</h2>
 
 all core Docker features including Dockerfiles and Docker Compose.
 
