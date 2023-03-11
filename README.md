@@ -198,6 +198,11 @@ docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share
 ---
 <!-- TOC --><a name="3-container-management-back"></a>
 ### 3. Container Management: [Back](#docker-cheatsheet-by-vikas-naik)
+>Note: <br />
+> - when a new container is created with `docker run imageName` docker creates new writable fs layer and stores in the harddrive. this writable fs layer remains in the harddisk even if the container is stopped. 
+> - when we start the stopped container this writable fs layer is again used by the docker.
+> - when we remove the stopped container its fs layer also gets deleted.
+
 
 ```sh
 docker run -p 8080:80 -d nginx // runs the container in the background
