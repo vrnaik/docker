@@ -14,6 +14,7 @@ all core Docker features including Dockerfiles and Docker Compose.
   * [3. Container Management](#3-container-management-back)
   * [4.A. Node.js in Docker](#4a-nodejs-in-docker-back)
   * [4.B. Express.js in Docker](#4b-expressjs-in-docker-back)
+  * [Docker Alternative Commands](#docker-alternative-commands)
   * [Docker Client Server Architecture](#docker-client-server-architecture-back)
   * [Quick Reference](#quick-reference-back)
   * [Glossary ](#glossary-back)
@@ -310,6 +311,17 @@ process.on('SIGTERM',() => {
    process.exit(0)
 })
 ```
+---
+<!-- TOC --><a name="docker-alternative-commands"></a>
+### Docker Alternative Commands: [Back](#docker-cheatsheet-by-vikas-naik)
+| Management Command (New) | Alternative Command (Old) |
+| :--------- | :-----:|
+|docker container ls | docker ps |
+|docker builder build | docker build |
+|docker container inspect | docker inspect |
+|docker container commit | docker commit |
+|docker container run | docker run |
+
 ---
 <!-- TOC --><a name="docker-client-server-architecture-back"></a>
 ### Docker Client Server Architecture: [Back](#docker-cheatsheet-by-vikas-naik)
