@@ -17,7 +17,7 @@ all core Docker features including Dockerfiles and Docker Compose.
   * [4.B. Express.js in Docker: Back](#4b-expressjs-in-docker-back)
   * [Docker Client Server Architecture: Back](#docker-client-server-architecture-back)
   * [Quick Reference: Back](#quick-reference-back)
-  * [Glossary: Back](#glossary-back)
+  * [Glossary: ](#glossary-back)
 <!-- TOC end -->
 
 <!-- TOC --><a name="tech"></a>
