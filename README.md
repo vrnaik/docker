@@ -50,10 +50,10 @@ to Markdown converter
 docker run --name hellWorld hello-world  // this will download hello-world image from remote registry of dockerhub and runs the container.
 ```
 > Note: <br />
-> -the `run` in above command creates new container and runs the container.<br />
-> -if no process running in the container, the container will get terminated immediately.<br />
-> -the flag `--name hellWorld` is used to give a name to the container. If we don't provide a name to the container, a random name is assigned to the container.<br />
-> -it is not possible to create two container with same name.<br />
+> - the `run` in above command creates new container and runs the container.<br />
+> - if no process running in the container, the container will get terminated immediately.<br />
+> - the flag `--name hellWorld` is used to give a name to the container. If we don't provide a name to the container, a random name is assigned to the container.<br />
+> - it is not possible to create two container with same name.<br />
 ---
 ```sh
 docker pull alpine // this will only download the image
@@ -62,8 +62,8 @@ docker pull alpine // this will only download the image
 ```sh
 docker ps // shows all running containers
 ```
-> -`docker container ls` is an alternative command to `docker ps` <br />
-> -`docker ps` commands shows containerid, container name, port and the command that's immediately executed inside the container. <br />
+> - `docker container ls` is an alternative command to `docker ps` <br />
+> - `docker ps` commands shows containerid, container name, port and the command that's immediately executed inside the container. <br />
 
 ---
 ```sh
@@ -103,14 +103,14 @@ docker run nginx // runs nginx container with port 80 opened
 ```sh
 docker run -p 8080:80 nginx
 ```
-> -here with `-p 8080:80` we have opened port 8080 of the system and mapped it with container's port 80. <br />
-> -all request to port 8080 is forwarded to port 80 of the container.<br />
-> -now localhost:8080 will work. <br />
+> - here with `-p 8080:80` we have opened port 8080 of the system and mapped it with container's port 80. <br />
+> - all request to port 8080 is forwarded to port 80 of the container.<br />
+> - now localhost:8080 will work. <br />
 ---
 ```sh
 docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share/nginx/html nginx
 ```
-> -here `/Users/vikasnaikmacbkpro/CodeWorkspace/Nginx` is local system directory path and `/usr/share/nginx/html` is container's directory path.
+> - here `/Users/vikasnaikmacbkpro/CodeWorkspace/Nginx` is local system directory path and `/usr/share/nginx/html` is container's directory path.
 ---
 <!-- TOC --><a name="list-of-all-restricted-ports-on-chrome-back"></a>
 ### List of all restricted ports on chrome: [Back](#docker-cheatsheet-by-vikas-naik)
@@ -207,9 +207,9 @@ docker run -p 8080:80 -v /Users/vikasnaikmacbkpro/CodeWorkspace/Nginx:/usr/share
 ```sh
 docker run -p 8080:80 -d nginx // runs the container in the background
 ```
-> -the `-d` flag in above command runs the container in the background and all the logs are stored to review it later. <br />
-> -above command will return the SHA Hashcode and run the container in background. <br />
-> -we can use command `docker log 922590` to view log of container running in the background. <br />
+> - the `-d` flag in above command runs the container in the background and all the logs are stored to review it later. <br />
+> - above command will return the SHA Hashcode and run the container in background. <br />
+> - we can use command `docker log 922590` to view log of container running in the background. <br />
 ---
 
 ```sh
@@ -221,9 +221,9 @@ docker log 922590 // shows log of the container having id 922590, put only first
 docker run --name ubuntu1 ubuntu // 
 ```
 > Note: 
-> -with above command we can create multiple container from same image. <br />
-> -all containers will have different environment with diff file structure but will share   same DOCKER HOST resources among them. <br />
-> -all containers will have different ip address but will be in same network as of network bridge of local system (DOCKERHOST). <br />
+> - with above command we can create multiple container from same image. <br />
+> - all containers will have different environment with diff file structure but will share   same DOCKER HOST resources among them. <br />
+> - all containers will have different ip address but will be in same network as of network bridge of local system (DOCKERHOST). <br />
 ---
 ```sh
 docker inspect ubuntu1 // to inspect the container, what is executed inside the container
@@ -232,9 +232,9 @@ docker inspect ubuntu1 // to inspect the container, what is executed inside the 
 ```sh
 docker start ubuntu1 // start the existing container which was stopped in the past
 ```
-> -the `start` in above command is used to start the existing container which is currently not running. <br />
-> -`ubuntu1` in above command is the container name that we want to start. <br />
-> -with `docker start` command container will be started exactly with the same configuration as it was running with before exit.(ie port mapping, volume mapping, container name) <br />
+> - the `start` in above command is used to start the existing container which is currently not running. <br />
+> - `ubuntu1` in above command is the container name that we want to start. <br />
+> - with `docker start` command container will be started exactly with the same configuration as it was running with before exit.(ie port mapping, volume mapping, container name) <br />
 ---
 
 ```sh
@@ -299,10 +299,10 @@ docker run -it node  // create new container from node image in interactive mode
 docker run -v $PWD:/app -w /app node node hello.js
 ```
 >Note: <br />
-   -in above command we have mapped our local system current directory with node containers `/app` directory. <br />
-   -the `-w /app` indicates that we want to set `/app` directory of container as a working directory. <br />
-   -the first `node` in the command is the name of the image. <br />
-   -after the first node, every thing ie `node hello.js` is the command to be executed inside the container.  <br />
+   - in above command we have mapped our local system current directory with node containers `/app` directory. <br />
+   - the `-w /app` indicates that we want to set `/app` directory of container as a working directory. <br />
+   - the first `node` in the command is the name of the image. <br />
+   - after the first node, every thing ie `node hello.js` is the command to be executed inside the container.  <br />
 ---
 
 <!-- TOC --><a name="4b-expressjs-in-docker-back"></a>
@@ -312,7 +312,7 @@ docker run -v $PWD:/app -w /app node node hello.js
 docker run -v $PWD:/app -w /app -it node npm init 
 ```
 >Note: <br />
-   -above command will create package.jon file in /app directory of container but bcoz it mapped to our local directory, we can see this file in our local system directory. <br />
+   - above command will create package.jon file in /app directory of container but bcoz it mapped to our local directory, we can see this file in our local system directory. <br />
    
 
 ---
@@ -320,7 +320,7 @@ docker run -v $PWD:/app -w /app -it node npm init
 docker run -v $PWD:/app -w /app -it node npm install express
 ```
 >Note: <br />
-   -above command will install expressjs module.
+   - above command will install expressjs module.
 
 ---
 
@@ -328,8 +328,8 @@ docker run -v $PWD:/app -w /app -it node npm install express
 docker run -v $PWD:/app -w /app -it -p 8081:3000 node node index.js
 ```
 >Note: <br />
-   -above command will map local system port 8081 with containers expressjs port 3000. <br />
-   -the node.js is an expressjs application.
+   - above command will map local system port 8081 with containers expressjs port 3000. <br />
+   - the node.js is an expressjs application.
 ---
 > to handle control C (^c) to terminate the expressjs server application, write below lines of code in the expressjs application server. 
 
