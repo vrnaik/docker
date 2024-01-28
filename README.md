@@ -275,8 +275,14 @@ docker images // shows all downloaded images with its size.
 ```
 ---
 ```sh
+docker image rm fd484f19954f // fd484f19954f is image id.
+```
+
+---
+```sh
 docker image prune // used to remove/delete only unused(dangling ones) images.
 ```
+
 ---
 ```sh
 docker image prune -a // used to remove/delete all images. it doesn't matter if it is in use by any container.
